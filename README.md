@@ -14,8 +14,9 @@ If you have a nested navigation bar, you need to add the data-layer to your navi
 
 > Important: the submenu and submenu displayer must be at the same depth level in the html
 
-## Example
+### Usage Example
 
+**In the HTML**
 ```html
 <nav class="nav">
   <ul>
@@ -41,12 +42,16 @@ If you have a nested navigation bar, you need to add the data-layer to your navi
 </nav>
 <script src='submenu.js'></script>
 ```
-
+**In the javascript**
 ```js
   document.querySelector('.nav').submenu({
     nested:true
   });
 ```
+
+### Live Example
+
+[Watch in CodePen](https://codepen.io/maneroto/pen/eYOEOpQ)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
