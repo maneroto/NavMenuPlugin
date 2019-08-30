@@ -5,7 +5,8 @@ navigation while you need it working by click instead of by hover.
 
 ## Usage
 
-> This plugin only adds the class '.active' to your submenu item, so you need to code all the css by your own (this gives you complete control in your navigation aspect design). If you want, you can also copy the css showed in the example.
+> This plugin only adds the class '.active' to your submenu item, so you need to code all the css by your own. If you want, you can also copy the css showed in the example.
+
 You need to select the item where you need the plugin to work and initialize it with the submenu method.
 Submenu method accepts the next options as parameter:
  * submenu: Accepts css selector which says the submenu's css name, the default value is '.submenu'
