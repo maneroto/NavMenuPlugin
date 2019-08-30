@@ -28,13 +28,13 @@ If you have a nested navigation bar, you need to add the data-layer to your navi
       </span>
       <div class="submenu">
         <ul>
-          <li>
+          <li data-layer='2'>
             Layer 2
           </li>
-          <li>
+          <li data-layer='2'>
            Layer 2
           </li>
-          <li>
+          <li data-layer='2'>
             Layer 2
           </li>
         </ul>
