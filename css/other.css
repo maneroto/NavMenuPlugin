@@ -1,0 +1,130 @@
+/* Dependences Start */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap');
+/* Dependences End */
+
+/* Main css Start */
+:root
+{
+	/* Font size Start */
+	--smallTextSize: calc(0.8 * var(--textSize));
+	--textSize: 2.5vmin;
+	--bigTextSize: calc(1.2 * var(--textSize));
+
+	--smallTitleSize: calc(0.8 * var(--titleSize));
+	--titleSize: 5vmin;
+	--bigTitleSize: calc(1.2 * var(--titleSize));
+	/* Font size End */
+
+	/* Color Start */
+	--primaryColor: #000000;
+	--secondaryColor: #ffffff;
+	--accentColor: #ffffff;
+	/* Color End */
+
+	/* Font family Start */
+	--textFamily: 'Montserrat', sans-serif;
+	--titleFamily: 'Montserrat', sans-serif;
+	/* Font family End */
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	text-decoration: inherit;
+	text-transform: inherit;
+	color: inherit;
+	list-style: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+body
+{
+	font-size: var(--textSize);
+	color: var(--secondaryColor);
+	list-style: none;
+	font-family: var(--textFamily);
+	font-weight: 300;
+	text-decoration: none;
+	text-transform: none;
+	background-color: var(--primaryColor);
+}
+@media only screen and(max-width: 850px), (orientation: portrait)
+{
+	:root
+	{
+		--textSize: 3.5vmin;
+		--titleSize: 6vmin;
+	}
+}
+/* Main css End */
+
+/* Nav Start */
+.nav
+{
+	position: fixed;
+	z-index: 999999;
+	left: 0;
+	top: 0;
+	background-color: blueviolet;
+}
+ul
+{
+	display: grid;
+	grid-auto-rows: 100px;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 10px;
+}
+ul ul
+{
+	background-color: var(--secondaryColor);
+	color: blueviolet;
+}
+li
+{
+	cursor: pointer;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+}
+li:hover
+{
+	background: var(--primaryColor);
+	color: var(--secondaryColor);
+}
+.submenuDisplayer
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.submenu
+{
+	position: absolute;
+	left: -100vw;
+	top: 0;
+	transition: left 0.2s ease;
+}
+.submenu.active
+{
+	left: 100% !important;
+}
+/* Nav Start */
+
+/* Details Start */
+details
+{
+	margin: 50vh 0 0 5vw;
+}
+details + a
+{
+	color: blueviolet;
+	margin: 3vh 0 0 5vw;
+}
+/* Details End */

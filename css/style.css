@@ -1,0 +1,155 @@
+/* Dependences Start */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap');
+/* Dependences End */
+
+/* Main css Start */
+:root
+{
+	/* Font size Start */
+	--smallTextSize: calc(0.8 * var(--textSize));
+	--textSize: 2.5vmin;
+	--bigTextSize: calc(1.2 * var(--textSize));
+
+	--smallTitleSize: calc(0.8 * var(--titleSize));
+	--titleSize: 5vmin;
+	--bigTitleSize: calc(1.2 * var(--titleSize));
+	/* Font size End */
+
+	/* Color Start */
+	--primaryColor: #000000;
+	--secondaryColor: #ffffff;
+	--accentColor: #ffffff;
+	/* Color End */
+
+	/* Font family Start */
+	--textFamily: 'Montserrat', sans-serif;
+	--titleFamily: 'Montserrat', sans-serif;
+	/* Font family End */
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	text-decoration: inherit;
+	text-transform: inherit;
+	color: inherit;
+	list-style: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+body
+{
+	font-size: var(--textSize);
+	color: var(--secondaryColor);
+	list-style: none;
+	font-family: var(--textFamily);
+	font-weight: 300;
+	text-decoration: none;
+	text-transform: none;
+}
+@media only screen and(max-width: 850px), (orientation: portrait)
+{
+	:root
+	{
+		--textSize: 3.5vmin;
+		--titleSize: 6vmin;
+	}
+}
+/* Main css End */
+
+/* Nav Start */
+.nav
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-transform: uppercase;
+	z-index: 99999;
+}
+.nav .logo
+{
+	width: 25vmin;
+	cursor: pointer;
+    background-color: var(--secondaryColor);
+    padding: 10px 25px;
+    margin: auto;
+}
+.nav .navContent
+{
+	background-color: var(--primaryColor);    
+	display: flex;
+    width: 100%;
+    color: var(--secondaryColor);
+}
+.nav .menu
+{
+	flex: 9;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	justify-content: center;
+	align-items: center;
+}
+.menu .menuItem, .nav .submenuDisplayer 
+{
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu .menuItem
+{
+	transition: background 0.5s ease, color 0.5s ease;
+}
+.menu .menuItem:hover
+{
+	background-color: var(--secondaryColor);
+	color: var(--primaryColor);
+}
+.menu .menuItem .menuItem:hover
+{
+	background-color: var(--primaryColor);
+	color: var(--secondaryColor);
+}
+.submenu
+{
+	position: absolute;
+	top: -100vh;
+	left: 0;
+	width: 100%;
+	background-color: var(--secondaryColor);
+	color: var(--primaryColor);
+	padding: 5vh 5%;
+    transition: top 0.5s ease;
+    z-index: -1;
+    cursor: default;
+    border-bottom: 1px solid var(--primaryColor);
+}
+.submenu.active
+{
+	top: 100% !important;
+}
+/* Nav End */
+
+/* Details Start */
+details
+{
+	margin: 30vh 0 0 5vw;
+	color: var(--primaryColor);
+}
+details + a
+{
+	color: var(--primaryColor);
+	text-decoration: underline;
+	margin: 3vh 0 0 5vw;
+}
+/* Details End */

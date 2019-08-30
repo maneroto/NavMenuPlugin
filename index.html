@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="maneroto">
+	<title>
+		NavBar with submenus
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<nav class="nav">
+		<div class="navContent">
+
+			<img src="img/logo.svg" class="logo" alt="strix development">
+
+			<ul class="menu">
+
+				<li class="menuItem"data-layer='1'>
+					Layer 1
+				</li>
+
+				<li class="menuItem" data-layer='1'>
+					<span class="submenuDisplayer">Layer 1 &#x25BC;</span>
+					<div class="submenu">
+						<ul class="menu">
+
+							<li class="menuItem" data-layer='2'>
+								<span class="submenuDisplayer">layer 2 &#x25BC;</span>
+								<div class="submenu">
+									<ul class="menu">
+
+										<li class="menuItem" data-layer='3'>
+											<span class="submenuDisplayer">layer 3 &#x25BC;</span>
+											<div class="submenu">
+												<ul class="menu">
+
+													<li class="menuItem" data-layer='4'>
+														layer 4
+													</li>
+
+												</ul>
+											</div>
+										</li>
+
+										<li class="menuItem" data-layer='3'>
+											layer 3
+										</li>
+
+									</ul>
+								</div>
+							</li>
+
+							<li class="menuItem" data-layer='2'>
+								<span class="submenuDisplayer">layer 2 &#x25BC;</span>
+								<div class="submenu">
+									<ul class="menu">
+										<li class="menuItem" data-layer='3'>
+											layer 3
+										</li>
+									</ul>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</li>
+
+				<li class="menuItem" data-layer='1'>
+					<span class="submenuDisplayer">Layer 1 &#x25BC;</span>
+					<div class="submenu">
+						<ul class="menu">
+
+							<li class="menuItem" data-layer='2'>
+								Layer 2
+							</li>
+
+						</ul>
+					</div>
+				</li>
+
+				<li class="menuItem"data-layer='1'>
+					Layer 1
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<details>
+		<summary>2019 &copy; <a href="https://github.com/maneroto">maneroto</a>.</summary>
+		This is a code created to manage nested elements in a Navigation Bar.<br>
+	</details>
+	<a href="other.html">
+		Another example
+	</a>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/submenu.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
