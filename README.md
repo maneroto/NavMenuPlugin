@@ -14,7 +14,7 @@ Submenu method accepts the next options as parameter:
  * nested: As it can work perfectly as a nested navigation bar, you can also use it as a simple navigation displayer, with only one                layer, the default value is 'false'
 If you have a nested navigation bar, you need to add the data-layer to your navigations items, telling how deep is the item.
 
-> Important: the submenu and submenu displayer must be at the same depth level in the html.
+> **Important: the submenu and submenu displayer must be at the same depth level in the html.**
 
 ### Usage Example
 
